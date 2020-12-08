@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2305939432361934880}
   - component: {fileID: 2305939432358432574}
   - component: {fileID: 2305939432359558714}
+  - component: {fileID: 182093294704892445}
+  - component: {fileID: 5220640022680174700}
   m_Layer: 0
   m_Name: door_front_L
   m_TagString: Untagged
@@ -85,6 +87,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &182093294704892445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305939432361501816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834e6931256c5a6449a6cb839e6a8dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyboard: 257
+--- !u!95 &5220640022680174700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305939432361501816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d9659fa2420c2040a4b0c5be1947d2a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2305939432361502234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,6 +1610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2305939432361873588}
+  - component: {fileID: 2265399088986484813}
   m_Layer: 0
   m_Name: Cartoon_SportCar_B01
   m_TagString: Untagged
@@ -1606,6 +1641,25 @@ Transform:
   m_Father: {fileID: 2305939432361934324}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2265399088986484813
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305939432361582612}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2305939432361585204
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,6 +6436,8 @@ GameObject:
   - component: {fileID: 2305939432361942468}
   - component: {fileID: 2305939432358541150}
   - component: {fileID: 2305939432359535040}
+  - component: {fileID: 2486181159681412671}
+  - component: {fileID: 7046659268305633576}
   m_Layer: 0
   m_Name: Trunk
   m_TagString: Untagged
@@ -6457,6 +6513,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2486181159681412671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305939432361590178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834e6931256c5a6449a6cb839e6a8dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyboard: 259
+--- !u!95 &7046659268305633576
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305939432361590178}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9fea319e1ef60c34fa447d22cd10333d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2305939432361592794
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,6 +6762,8 @@ GameObject:
   - component: {fileID: 2305939432361837784}
   - component: {fileID: 2305939432358533672}
   - component: {fileID: 2305939432359535778}
+  - component: {fileID: 1284057680631496867}
+  - component: {fileID: 5908924688937592125}
   m_Layer: 0
   m_Name: door_front_R
   m_TagString: Untagged
@@ -6748,6 +6838,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1284057680631496867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305939432361599908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834e6931256c5a6449a6cb839e6a8dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyboard: 258
+--- !u!95 &5908924688937592125
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305939432361599908}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4806beb9ee98ac74c85870f585ea11f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2305939432361601082
 GameObject:
   m_ObjectHideFlags: 0
