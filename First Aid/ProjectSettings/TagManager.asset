@@ -9,6 +9,7 @@ TagManager:
   - FirstAidKit
   - Door
   - Trunk
+  - ExamineText
   layers:
   - Default
   - TransparentFX
