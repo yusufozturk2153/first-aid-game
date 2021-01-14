@@ -6,9 +6,9 @@ using TMPro;
 
 public class FirstAidInterventions : MonoBehaviour
 {
-    [SerializeField] GameObject examine;
+ 
     [SerializeField] GameObject intervention;
-    [SerializeField] TextMeshProUGUI[] textsOnExaminePanel;
+   
 
     Button[] buttonsOnInterventionPanel;
     void Start()
@@ -21,20 +21,5 @@ public class FirstAidInterventions : MonoBehaviour
         
     }
 
-    public void ShowExamine()
-    {
-        examine.SetActive(true);
-        ChangeTextsOnExamine();
-    }
-
-    public void ChangeTextsOnExamine()
-    {
-        string[] texts = new string[] { "The heart beat stopped", "Bleeding in the left arm", "Broken left foot" };
-
-        for(int i=0; i< textsOnExaminePanel.Length; i++)
-        {
-            textsOnExaminePanel[i].text = texts[i];
-        }
-    
-    }
+  
 }

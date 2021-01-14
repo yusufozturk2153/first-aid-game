@@ -10,12 +10,6 @@ public class OpenElement : MonoBehaviour {
 		Opening = GetComponent<Animator>();
 	}
 
-	
-	void Update () {
-     
-		
-	}
-
 	public void OpenOrClose()
     {
 		Opening.SetBool("isOpen", !Opening.GetBool("isOpen"));

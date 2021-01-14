@@ -10,6 +10,7 @@ TagManager:
   - Door
   - Trunk
   - ExamineText
+  - FirstAidButton
   layers:
   - Default
   - TransparentFX
