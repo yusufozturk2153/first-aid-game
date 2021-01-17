@@ -10,7 +10,7 @@ public class GameLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0)&& SceneManager.GetActiveScene().buildIndex<3)
         {
              LoadGame();
         }
@@ -18,25 +18,27 @@ public class GameLoader : MonoBehaviour
         {
             LoadGame();
         }
-      
-        
+  
     }
 
     public void LoadGame()
     {
         StartCoroutine(LoadGame(SceneManager.GetActiveScene().buildIndex + 1));
-     
     }
 
     IEnumerator LoadGame(int gameIndex)
     {
-        //Play Animatipn
-       //transition.SetTrigger("Start");
-        //Wait
-
-
         yield return new WaitForSeconds(transitionTime);
-        //Load Game
+        if (gameIndex < 3)
+        {
+            SceneManager.LoadScene(gameIndex);
+        }
+        
+    }
+    public void LoadChosenScene(int gameIndex)
+    {
         SceneManager.LoadScene(gameIndex);
+        Time.timeScale = 1;
+
     }
 }

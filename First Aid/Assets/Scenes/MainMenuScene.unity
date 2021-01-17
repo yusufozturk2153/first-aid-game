@@ -3861,7 +3861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -36.4}
+  m_AnchoredPosition: {x: 12, y: -16}
   m_SizeDelta: {x: 610.4, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477325503
@@ -3884,10 +3884,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Examine the condition of the casualty\r\n-Check if consciousness is off
-    or on\r\n-Call Emergency Service\r\n-If the heart has stopped, do a CPR\r\n-If
-    there is bleeding, stop by wrapping the wound\r\n-If there is a blow to the head,
-    check the consciousness\r"
+  m_text: '-Examine the condition of the casualty
+
+    -Call Emergency Service
+
+    -Check
+    if consciousness is off or on
+
+    -If the heart has stopped, do a CPR
+
+    -If
+    there is a blow to the head, check the consciousness
+
+    -If there is bleeding,
+    stop by wrapping the wound
+
+    -If there are  broken bones, immobilize the
+    area
+
+    -If there are small scratches, cover the wounds with gauze
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -3950,7 +3967,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -56.78062, y: 0, z: -20.537724, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

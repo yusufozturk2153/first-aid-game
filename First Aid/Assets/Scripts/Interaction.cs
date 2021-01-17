@@ -12,6 +12,8 @@ public class Interaction : MonoBehaviour
     [SerializeField] UnityEvent interactAction;
     [SerializeField] GameObject instructions;
     [SerializeField] Camera cam;
+    [SerializeField] GameObject firstAidKit;
+    [SerializeField] GameObject warningPanel;
 
 
 
@@ -38,7 +40,10 @@ public class Interaction : MonoBehaviour
 
     public void InteractWithObject()
     {
-        
+        if (!firstAidKit.activeInHierarchy)
+        {
+            warningPanel.SetActive(false);
+        }
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out raycastHit, interactionDistance) && raycastHit.collider.gameObject.name==gameObject.name)
         {
            
@@ -85,7 +90,18 @@ public class Interaction : MonoBehaviour
         }
         else
         {
-            return "Press 'E' For Examine";
+            if (firstAidKit.activeInHierarchy)
+            {
+                instructions.SetActive(false);
+                warningPanel.SetActive(true);
+                return "";
+            }
+            else
+            {
+                warningPanel.SetActive(false);
+                return "Press 'E' For Examine";
+            }
+           
         }
 
         

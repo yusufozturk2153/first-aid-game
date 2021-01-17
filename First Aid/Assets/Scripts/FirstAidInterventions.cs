@@ -70,7 +70,6 @@ public class FirstAidInterventions : MonoBehaviour
 
         }
 
-
     }
     public void CheckOrder()
     {

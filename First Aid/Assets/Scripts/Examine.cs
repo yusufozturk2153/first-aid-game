@@ -11,29 +11,25 @@ public class Examine : MonoBehaviour
     [SerializeField] Sprite[] images;
     [SerializeField] Image examineImage;
 
-    public Injury[] injuriesForShow =new Injury[3];
+    public Injury[] injuriesForShow = new Injury[3];
 
-    Injury[] injuryList= new Injury[12];
+    Injury[] injuryList = new Injury[12];
 
     public void ShowExamine()
     {
-       
-       gameObject.SetActive(true);
 
-     
+        gameObject.SetActive(true);
 
-       AddInjuries();
+        AddInjuries();
 
-       int randomNumber = Random.Range(0, 4);
-       System.Array.Copy(injuryList, randomNumber * 3, injuriesForShow, 0, 3);
+        int randomNumber = Random.Range(0, 4);
+        System.Array.Copy(injuryList, randomNumber * 3, injuriesForShow, 0, 3);
         injuriesForShow = injuriesForShow.OrderBy(i => i.Importance).ToArray();
         StartCursorMode();
         ChangeExamine(injuriesForShow, images[randomNumber]);
     }
 
-   
-
-    public void ChangeExamine(Injury[] injuries,Sprite image)
+    public void ChangeExamine(Injury[] injuries, Sprite image)
     {
         examineImage.sprite = image;
 
@@ -43,14 +39,14 @@ public class Examine : MonoBehaviour
         }
 
     }
-    
+
     public void CloseExamineContent()
     {
         foreach (TextMeshProUGUI txt in textsOnExaminePanel)
         {
             txt.enabled = false;
         }
-        
+
         GameObject.FindGameObjectWithTag("FirstAidButton").SetActive(false);
     }
 
@@ -63,7 +59,7 @@ public class Examine : MonoBehaviour
 
     void AddInjuries()
     {
-        
+
 
         string[] examines = new string[] { "The heart beat stopped", "Bleeding in the left arm", "Broken left foot", "Broken left arm", "Blow to the head", "A small scratch on the left leg", "Bleeding in the right arm", "Pain in the neck", "Broken fingers in the left hand", "Bleeding in the left leg", "Broken left arm", "Minor wounds on the fingers" };
 
