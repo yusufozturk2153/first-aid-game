@@ -50,10 +50,10 @@ public class Interaction : MonoBehaviour
                    interactAction.Invoke();
               }
         }
-        else 
+        else if((cam.transform.position-gameObject.transform.position).magnitude>4f)
         {
 
-            //instructions.SetActive(false);
+            instructions.SetActive(false);
         }
 
       

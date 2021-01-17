@@ -11,6 +11,9 @@ TagManager:
   - Trunk
   - ExamineText
   - FirstAidButton
+  - FinalText
+  - CorrectText
+  - ChoiceText
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameLoader : MonoBehaviour
 {
     //public Animator transition;
-    public float transitionTime = 1f;
+    public float transitionTime = 7f;
     // Update is called once per frame
     void Update()
     {

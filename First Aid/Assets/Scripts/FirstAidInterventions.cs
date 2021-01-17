@@ -12,9 +12,12 @@ public class FirstAidInterventions : MonoBehaviour
 
     [SerializeField] Examine examine;
     [SerializeField] TextMeshProUGUI[] textsOnInterventionPanel;
+    [SerializeField] GameObject finishButton;
+
     [SerializeField] GameObject finalPanel;
 
-    List<Injury> clickedButtons;
+    public bool check;
+    public List<Injury> clickedButtons;
     void Start()
     {
         clickedButtons = new List<Injury>();
@@ -22,7 +25,11 @@ public class FirstAidInterventions : MonoBehaviour
 
     void Update()
     {
-
+        if (clickedButtons.Count == 4)
+        {
+            gameObject.SetActive(false);
+            finishButton.SetActive(true);
+        }
     }
 
     public void ShowIntervention()
@@ -32,8 +39,6 @@ public class FirstAidInterventions : MonoBehaviour
         ChangeIntervention(examine.injuriesForShow);
         
     }
-
-
 
     public void ChangeIntervention(Injury[] injuries)
     {
@@ -67,9 +72,9 @@ public class FirstAidInterventions : MonoBehaviour
 
 
     }
-    public void CheckSorting()
+    public void CheckOrder()
     {
-        bool check = true;
+       check = true;
         for(int i = 0; i < clickedButtons.Count; i++)
         {
             if (i != clickedButtons[i].Importance)
@@ -79,11 +84,14 @@ public class FirstAidInterventions : MonoBehaviour
             }
            
         }
-        FinishFirstAid(check);
+        FinishFirstAid();
     }
 
-    private void FinishFirstAid(bool check)
+    private void FinishFirstAid()
     {
         finalPanel.SetActive(true);
+        examine.enabled = false;
+        gameObject.SetActive(false);
+       
     }
 }

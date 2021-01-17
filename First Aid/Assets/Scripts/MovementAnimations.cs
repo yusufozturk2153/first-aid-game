@@ -53,6 +53,7 @@ public class MovementAnimations : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+        
     }
 
     private void GetOffTheCar()
